@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #ccc;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  background-repeat: no-repeat;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+}
+
+iframe.iphone {
+  margin-top: 30px;
+  
+  &.portrait {
+    background-image: url('../images/iPhone5-portrait.png');
+    padding: 123px 55px 117px 55px;
+  }
+  
+  &.landscape {
+    background-image: url('../images/iPhone5-landscape.png');
+    padding: 55px 123px 55px 117px;
+  }
+}
+
+iframe.ipad {
+  margin-top: 50px;
+  
+  &.portrait {
+    background-image: url('../images/iPad3-portrait.png');
+    padding: 111px 94px;
+  }
+  
+  &.landscape {
+    background-image: url('../images/iPad3-landscape.png');
+    padding: 94px 111px;
+  }
+}
+
+#responder-menu {
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      border-right: 1px solid rgba(255, 255, 255, 0.8);
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      padding: 0.5em;
+      
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
