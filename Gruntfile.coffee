@@ -19,13 +19,13 @@ module.exports = (grunt) ->
     
     watch:
       scripts:
-        files: ['scripts/**/*.coffee', 'styles/*.scss']
+        files: ['scripts/*.coffee', 'styles/*.scss', 'index.html']
         tasks: ['build']
     
     copy:
       dist:
         files: [
-          expand: true, src: ['images/**'], dest: 'dist/'
+          expand: true, src: ['index.html', 'images/**'], dest: 'dist/'
         ]
     
     grunt.loadNpmTasks 'grunt-contrib-coffee'
